@@ -5,8 +5,17 @@ urls_to_files = {
 
 side_bar_components = {
     "главная":"main",
-    "расписание": "schedule", 
+    "работа": "work",
+    "планы": "schedule", 
     "команды": "teams", 
     "настройки": "settings", 
     "личный кабинет": "account"
+}
+
+side_bar_logos = {
+    "главная":"main.svg",
+    "расписание": "schedule.svg", 
+    "команды": "teams.svg", 
+    "настройки": "settings.svg", 
+    "личный кабинет": "account.svg"
 }

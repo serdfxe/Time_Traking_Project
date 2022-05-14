@@ -82,9 +82,12 @@ div {
 .menu li {
     list-style-type: none;
     transition: 0.1s;
-    padding-left: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
 }
 
 .menu .disabled a {
@@ -103,6 +106,10 @@ div {
     white-space: nowrap;
     font-size: 17px;
     color: var(--highlight-text-color);
+}
+
+.menu li img{
+    padding-right: 10px;
 }
 
 .content {

@@ -18,10 +18,12 @@
             {% for i in side_bar_components %}
                 {% if side_bar_components[i] == current %}
                     <li class="current">
+                        <img src="{{ url_for('static', filename = 'img/sidebar/enabled/'+side_bar_logos[i]) }}" alt="">
                         <a>{{ i }}</a>
                     </li>
                 {% else %}
                     <li class="disabled">
+                        <img src="{{ url_for('static', filename = 'img/sidebar/disabled/'+side_bar_logos[i]) }}" alt="">
                         <a href="{{ side_bar_components[i] }}">{{ i }}</a>
                     </li>
                 {% endif %}
