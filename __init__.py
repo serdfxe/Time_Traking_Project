@@ -1,22 +1,10 @@
-from flask import Flask, redirect, render_template, url_for
+from flask import Flask
+from Time_Traking_Project.views.main import main
 
+def create_app():
+    app = Flask(__name__)
+    app.debug = 1
 
-app = Flask(__name__)
+    app.register_blueprint(main)
 
-urls_to_files = {
-    "main": "main_page.html",
-    "page_two": "page_two.html"
-}
-
-
-@app.route("/<s>", methods=('GET', 'POST'))
-def root_page(s):
-    return render_template(urls_to_files[s])
-
-
-
-@app.route("/", methods=('GET', 'POST'))
-def empty_page():
-    return redirect(url_for("root_page", s="main"))
-
-app.run("0.0.0.0", port="80", debug=True)
+    return app

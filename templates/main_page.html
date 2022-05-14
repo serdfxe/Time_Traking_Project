@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/minilogo.svg') }}">
 </head>
 <body>
     <div class='sidebar'>
         <div class="logos">
-            <img src="img/minilogo.svg" alt="?" class="minilogo">
-            <img src="img/logo.svg" class="logo" alt="?">
+            <img src="{{ url_for('static', filename='img/minilogo.svg') }}" alt="?" class="minilogo">
+            <img src="{{ url_for('static', filename='img/logo.svg') }}" class="logo" alt="?">
         </div>
         
         <ul class="menu">
