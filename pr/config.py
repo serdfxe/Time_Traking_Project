@@ -17,5 +17,7 @@ side_bar_logos = {
     "расписание": "schedule.svg", 
     "команды": "teams.svg", 
     "настройки": "settings.svg", 
-    "личный кабинет": "account.svg"
+    "личный кабинет": "account.svg",
+    "работа": "work",
+    "планы": "schedule"
 }

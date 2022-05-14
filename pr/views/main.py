@@ -1,5 +1,5 @@
 from flask import Blueprint, flash, redirect, render_template, request, session, url_for
-from Time_Traking_Project.config import *
+from pr.config import *
 
 
 main = Blueprint("main", __name__)
