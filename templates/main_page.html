@@ -15,24 +15,17 @@
         </div>
         
         <ul class="menu">
-            <li style="background-color: cornflowerblue;">
-                <a href="" style="color: #101727;">main page</a>
-            </li>
-            <li>
-                <a href="/page_two">page two</a>
-            </li>
-            <li>
-                <a href="3">page three</a>
-            </li>
-            <li>
-                <a href="4">page four</a>
-            </li>
-            <li>
-                <a href="5">very long page</a>
-            </li>
-            <li>
-                <a href="6">pepe</a>
-            </li>
+            {% for i in side_bar_components %}
+                {% if side_bar_components[i] == current %}
+                    <li class="current">
+                        <a>{{ i }}</a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="{{ side_bar_components[i] }}">{{ i }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
         </ul>
     </div>
     

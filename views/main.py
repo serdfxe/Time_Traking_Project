@@ -7,7 +7,7 @@ main = Blueprint("main", __name__)
 
 @main.route("/<s>", methods=('GET', 'POST'))
 def root_page(s):
-    return render_template(urls_to_files[s])
+    return render_template(urls_to_files[s], side_bar_components=side_bar_components, current=s)
 
 
 @main.route("/", methods=('GET', 'POST'))
