@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
     <div class='sidebar'>
@@ -18,7 +18,7 @@
                 <a href="" style="color: #101727;">main page</a>
             </li>
             <li>
-                <a href="/Users/pasha/Desktop/крутая папка/html/index2.html">page two</a>
+                <a href="/page_two">page two</a>
             </li>
             <li>
                 <a href="3">page three</a>
