@@ -25,6 +25,7 @@ body {
     margin: 0;
     display: flex;
     font-family: Inter;
+    min-height: 100vh;
 }
 
 div {
@@ -35,6 +36,7 @@ div {
     background-color: var(--dark-dominant-color);
     width: 50px;
     transition: 0.5s;
+    height: 100%;
 }
 
 .logos {
@@ -77,6 +79,7 @@ div {
     text-transform: capitalize;
     padding: 0px;
     margin: 15px 0px;
+    position: static;
 }
 
 .menu li {
@@ -109,14 +112,19 @@ div {
 }
 
 .menu li img{
+    height: 30px;
+    width: 30px;
     padding-right: 10px;
 }
 
 .content {
     background-color: var(--light-dominant-color);
     flex: 1;
+    height: 100%;
+    position: static;
 }
 
 .content img{
     padding: 10px;
+    height: -webkit-fill-available;
 }
